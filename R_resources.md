@@ -29,10 +29,16 @@ _________________
 Do you want to learn R?
 
 If you have little to no coding experience and want to get started, or are 
-new to R and data processing, this online book is great:
+new to R and data processing, chapter 1 of this online book is great:
 
 __Statistical Inference via Data Science__
 https://moderndive.com/1-getting-started.html
+
+__Tips on learning to code__
+https://moderndive.com/1-getting-started.html#tips-code
+
+
+<!-- > ^learning to code goes much smoother ... when you are working on a particular project, like analyzing data that you are interested in and that is important to you.^ -->
 
 If are familiar with general coding principles, or have even coded in old school 
 base R extensively, but are new to tidy R or data science with R, 
@@ -52,15 +58,18 @@ tidyverse tools. Thankfully, these are extremely well documented with vignettes
 and examples. Many of the most commonly used data manipulation functions come
 from the package `dplyr`:
 
-__Introduction to dplyr__ https://dplyr.tidyverse.org/articles/dplyr.html
+__Introduction to dplyr__ 
+https://dplyr.tidyverse.org/articles/dplyr.html
 
 You'll also want to plot data, and hence learn `ggplot2`:
 
-__Learning ggplot2__ https://ggplot2.tidyverse.org/#learning-ggplot2
+__Learning ggplot2__ 
+https://ggplot2.tidyverse.org/#learning-ggplot2
 
 If you want to get started plotting quickly, you can find what you need here:
 
-__R Graphics Cookbook__ https://r-graphics.org/
+__R Graphics Cookbook__ 
+https://r-graphics.org/
 
 
 Now that you're writing code, you are aren't going to want to stop and read 
@@ -68,7 +77,8 @@ books every time you need to look up how to do something. I don't even know how
 to read anymore. One of the best things
 about modern R tools are the cheat sheets. Here is a centralized collection:
 
-__RStudio Cheatsheets__ https://www.rstudio.com/resources/cheatsheets/
+__RStudio Cheatsheets__ 
+https://www.rstudio.com/resources/cheatsheets/
 
 _________________
 
@@ -83,7 +93,8 @@ This is a major motivation behind using tidy data and tidyverse functions, but
 these won't save you from writing unreadable code. You have infinite choices in 
 naming and formatting things. For legibility and consistency, try to adhere to:
 
-__The tidyverse style guide__ https://style.tidyverse.org/
+__The tidyverse style guide__ 
+https://style.tidyverse.org/
 
 _________________
 
@@ -105,7 +116,7 @@ By far the best resource for statistical data analysis I've ever seen is
 [Cosma Shalizi's](http://bactra.org/): 
 
 __Advanced Data Analysis from an Elementary Point of View__
-https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf 
+https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/
 
 Most texts either focus on the principles and theory of statistics, or the 
 nitty gritty of data analysis code. This book is about theory while
