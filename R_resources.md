@@ -159,7 +159,7 @@ __Spatial Analysis with R__
 https://chiajung-yeh.github.io/Spatial-Analysis/
 
 This text by [Yeh Chia Jung](https://github.com/chiajung-yeh) looks nice. 
-It's basically and in-depth how to on using the `sf` package. 
+It's basically an in-depth demo using the `sf` package. 
 It illustrates how to use `ggplot` in combination with spatial data, and also 
 explains what goes into making data spatial. 
 
