@@ -2,11 +2,15 @@
 title: "Learning R for Wildlife"
 author: "Jon Weissman <jweissma@gmail.com>"
 date: "4/28/2022"
-output: 
+output:
   html_document:
-    keep_md: true
-    toc: true
+    keep_md: yes
+    toc: yes
     theme: united
+  word_document:
+    toc: yes
+  pdf_document:
+    toc: yes
 ---
 
 This document compiles R resources that I recommend. R is not the most
@@ -17,6 +21,7 @@ conventional programming languages like C or Python.
 Given that, it is easy to head down the wrong path in R. The resources I list 
 here are largely chosen to avoid those pitfalls. 
 
+<base target="_top"/>
 _________________
 
 ## Basics
@@ -29,10 +34,11 @@ new to R and data processing, this online book is great:
 __Statistical Inference via Data Science__
 https://moderndive.com/1-getting-started.html
 
-If you have are kinda familiar with code, or have even coded in old school 
+If are familiar with general coding principles, or have even coded in old school 
 base R extensively, but are new to tidy R or data science with R, 
 [Hadley's](https://github.com/hadley) book is the definitive 
-guide to analyzing data with R: 
+guide to analyzing data with R. It's also great for more experienced coders as
+a guide to organizing the data analysis work flow. 
 
 __R for Data Science__
 https://r4ds.had.co.nz/index.html
@@ -46,7 +52,7 @@ tidyverse tools. Thankfully, these are extremely well documented with vignettes
 and examples. Many of the most commonly used data manipulation functions come
 from the package `dplyr`:
 
-__Introduction to dplyr__ https://dplyr.tidyverse.org/index.html
+__Introduction to dplyr__ https://dplyr.tidyverse.org/articles/dplyr.html
 
 You'll also want to plot data, and hence learn `ggplot2`:
 
@@ -55,6 +61,29 @@ __Learning ggplot2__ https://ggplot2.tidyverse.org/#learning-ggplot2
 If you want to get started plotting quickly, you can find what you need here:
 
 __R Graphics Cookbook__ https://r-graphics.org/
+
+
+Now that you're writing code, you are aren't going to want to stop and read 
+books every time you need to look up how to do something. I don't even know how 
+to read anymore. One of the best things
+about modern R tools are the cheat sheets. Here is a centralized collection:
+
+__RStudio Cheatsheets__ https://www.rstudio.com/resources/cheatsheets/
+
+_________________
+
+## Style 
+
+Writing code is not just about building a machine that processes data. 
+Especially for scientific data analysis, code is also a precise description 
+of your methodology. If others can read it, they can learn exactly what you did 
+with your data. The challenge is making your code readable. 
+
+This is a major motivation behind using tidy data and tidyverse functions, but
+these won't save you from writing unreadable code. You have infinite choices in 
+naming and formatting things. For legibility and consistency, try to adhere to:
+
+__The tidyverse style guide__ https://style.tidyverse.org/
 
 _________________
 
@@ -79,8 +108,8 @@ __Advanced Data Analysis from an Elementary Point of View__
 https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf 
 
 Most texts either focus on the principles and theory of statistics, or the 
-nitty gritty of data analysis code. This book stays focussed on the basics 
-while also demonstrating everything with actual R code and plots. The one 
+nitty gritty of data analysis code. This book is about theory while
+also demonstrating things with actual R code and plots. The one 
 downside is that it uses base R instead of tidyverse stuff. However, once you
 are familiar with tidyverse stuff it is not hard to go between the two. The 
 largest difference is in the base `plot` versus the tidy `ggplot`.
@@ -177,6 +206,14 @@ Fortunately there is another path, and once again Hadley is there to guide us:
 __Advanced R__
 https://adv-r.hadley.nz/
 
+You may want to publish your code as a tool to be used by others for purposes 
+beyond your particular use case and data. In this case, you should make an R 
+package. Personally, I'm new at that and don't have much experience, but this
+book is guiding me through the process:
+
+__R Packages__
+https://r-pkgs.org/index.html
+
 _________________
 
 ## RMarkdown
@@ -189,3 +226,5 @@ __R Markdown: The Definitive Guide__
 https://bookdown.org/yihui/rmarkdown/
   
 _________________
+
+Source: https://github.com/rgzn/r_guides

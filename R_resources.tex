@@ -1,0 +1,291 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Learning R for Wildlife},
+  pdfauthor={Jon Weissman jweissma@gmail.com},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Learning R for Wildlife}
+\author{Jon Weissman
+\href{mailto:jweissma@gmail.com}{\nolinkurl{jweissma@gmail.com}}}
+\date{4/28/2022}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+This document compiles R resources that I recommend. R is not the most
+straightforward programming language, and different styles of R code can
+appear drastically different. Almost every style will look quite
+different from more conventional programming languages like C or Python.
+
+Given that, it is easy to head down the wrong path in R. The resources I
+list here are largely chosen to avoid those pitfalls.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{basics}{%
+\subsection{Basics}\label{basics}}
+
+Do you want to learn R?
+
+If you have little to no coding experience and want to get started, or
+are new to R and data processing, this online book is great:
+
+\textbf{Statistical Inference via Data Science}
+\url{https://moderndive.com/1-getting-started.html}
+
+If you have are kinda familiar with code, or have even coded in old
+school base R extensively, but are new to tidy R or data science with R,
+\href{https://github.com/hadley}{Hadley's} book is the definitive guide
+to analyzing data with R:
+
+\textbf{R for Data Science} \url{https://r4ds.had.co.nz/index.html}
+
+Both of these resources are listed on the
+\href{https://www.tidyverse.org/learn/}{tidyverse} website.
+
+Once you've started using these, you'll quickly need more reference info
+on tidyverse tools. Thankfully, these are extremely well documented with
+vignettes and examples. Many of the most commonly used data manipulation
+functions come from the package \texttt{dplyr}:
+
+\textbf{Introduction to dplyr}
+\url{https://dplyr.tidyverse.org/index.html}
+
+You'll also want to plot data, and hence learn \texttt{ggplot2}:
+
+\textbf{Learning ggplot2}
+\url{https://ggplot2.tidyverse.org/\#learning-ggplot2}
+
+If you want to get started plotting quickly, you can find what you need
+here:
+
+\textbf{R Graphics Cookbook} \url{https://r-graphics.org/}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{statistics}{%
+\subsection{Statistics}\label{statistics}}
+
+Do you want to get some basic descriptive statistics (mean, variance,
+etc)? Do you want to make some plots or fit a basic model?
+
+\textbf{R for Data Science}, again, has you covered.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://r4ds.had.co.nz/exploratory-data-analysis.html}{Ch 7
+  Exploratory Data Analysis}
+\item
+  \href{https://r4ds.had.co.nz/model-intro.html}{Ch 22 Modeling}
+\end{itemize}
+
+Do you want to model your data for legit scientific use? Understand
+linear or logistic regression? Use (and actually understand) generalized
+additive models?
+
+By far the best resource for statistical data analysis I've ever seen is
+\href{http://bactra.org/}{Cosma Shalizi's}:
+
+\textbf{Advanced Data Analysis from an Elementary Point of View}
+\url{https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf}
+
+Most texts either focus on the principles and theory of statistics, or
+the nitty gritty of data analysis code. This book stays focussed on the
+basics while also demonstrating everything with actual R code and plots.
+The one downside is that it uses base R instead of tidyverse stuff.
+However, once you are familiar with tidyverse stuff it is not hard to go
+between the two. The largest difference is in the base \texttt{plot}
+versus the tidy \texttt{ggplot}.
+
+Some of the content in this book is probably not of interest. I
+certainly haven't made it through the whole thing. So I'll highlight
+some sections I've found particularly useful here:
+
+\begin{itemize}
+\tightlist
+\item
+  1.1 \emph{Regression: Predicting and Relating Quantitative Features}
+\item
+  2.4 \emph{Linear Regression Is Not the Philosopher's Stone}
+\item
+  3 \emph{Model Evaluation}
+\item
+  8 \emph{Additive Models}
+\item
+  12 \emph{Generalized Linear Models and Generalized Additive Models}
+\end{itemize}
+
+I think if you were to work through that whole book you would have a
+better statistics education than the majority of professional data
+scientists.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{spatial-data}{%
+\subsection{Spatial Data}\label{spatial-data}}
+
+Do you want to make maps? Do spatial statistics? Explore movements?
+
+Spatial data comes in two forms: Vector and Raster.
+
+\begin{itemize}
+\tightlist
+\item
+  Vector: This is data associated with precise coordinates. Think
+  points, lines, gps fixes, roads.
+\item
+  Raster: This is gridded data that is mapped to a spatial surface. The
+  data is in images, and each pixel of that image covers a general area
+  rather than precise coordinates. Think satellite imagery or elevation
+  models.
+\end{itemize}
+
+For vector data, you will want to use \texttt{sf}:
+
+\textbf{Simple Features for R} \url{https://r-spatial.github.io/sf/}
+
+This is an R package, not a book. However, like many good R packages, it
+has excellent documentation in the \emph{Articles} or \emph{vignettes}.
+
+\texttt{sf} is at the heart of all the code I've written to process
+telemetry data. I can't recommend it enough, and
+\href{https://github.com/edzer}{Edzer} is the most responsive developer
+I've encountered.
+
+For more info on how to use \texttt{sf}:
+
+\textbf{Spatial Analysis with R}
+\url{https://chiajung-yeh.github.io/Spatial-Analysis/}
+
+This text by \href{https://github.com/chiajung-yeh}{Yeh Chia Jung} looks
+nice. It's basically and in-depth how to on using the \texttt{sf}
+package. It illustrates how to use \texttt{ggplot} in combination with
+spatial data, and also explains what goes into making data spatial.
+
+For raster data, the corresponding package is \texttt{stars}:
+
+\textbf{Spatiotemporal Arrays: Raster and Vector Datacubes}
+(\url{https://r-spatial.github.io/stars/})
+
+However, this is a younger package and has a strong competitor in
+\href{https://rspatial.org/terra/pkg/index.html}{\texttt{terra}}, which
+I haven't used but I know is popular.
+
+More info:
+
+The underlying libraries driving all of these spatial data tools come
+from \href{https://www.osgeo.org/partners/ogc/}{Open Geospatial
+Consortium}. These tools, like \href{https://gdal.org/}{GDAL} and
+\href{https://proj.org/}{PROJ} also power software like
+\href{https://www.qgis.org/en/site/}{QGIS} and
+\href{https://postgis.net/}{PostGIS}.
+
+The good thing about that is that it's easy to exchange data between any
+of these tools, and often an analysis done in one can be easily
+replicated in another. For example, I've often done something using the
+QGIS graphical interface, and then once I've figured out what I wanted,
+copied the steps over into R or Python using the same underlying GDAL
+library.
+
+Unfortunately, ESRI does it's own thing and often doesn't play well with
+OGC tools.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{advanced-r-topics}{%
+\subsection{Advanced R topics}\label{advanced-r-topics}}
+
+At some point writing tidy R code you are going to get frustrated and
+feel limited with what you can do. Most likely you will then start
+trying to write Python using R, with for loops and such. This can work
+but will also get really messy, and if you choose this path, you will
+regret ever using R because things would have been easier and faster had
+you started with Python.
+
+Fortunately there is another path, and once again Hadley is there to
+guide us:
+
+\textbf{Advanced R} \url{https://adv-r.hadley.nz/}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{rmarkdown}{%
+\subsection{RMarkdown}\label{rmarkdown}}
+
+This is an R Markdown document. Markdown is a simple formatting syntax
+for authoring HTML, PDF, and MS Word documents. For more details on
+using R Markdown see \url{http://rmarkdown.rstudio.com}.
+
+For more info on how to write R Markdown and do really fancy stuff with
+it:
+
+\textbf{R Markdown: The Definitive Guide}
+\url{https://bookdown.org/yihui/rmarkdown/}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\end{document}
