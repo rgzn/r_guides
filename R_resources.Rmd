@@ -2,11 +2,15 @@
 title: "Learning R for Wildlife"
 author: "Jon Weissman <jweissma@gmail.com>"
 date: "4/28/2022"
-output: 
+output:
   html_document:
-    keep_md: true
-    toc: true
+    keep_md: yes
+    toc: yes
     theme: united
+  word_document:
+    toc: yes
+  pdf_document:
+    toc: yes
 ---
 
 This document compiles R resources that I recommend. R is not the most
@@ -17,6 +21,7 @@ conventional programming languages like C or Python.
 Given that, it is easy to head down the wrong path in R. The resources I list 
 here are largely chosen to avoid those pitfalls. 
 
+<base target="_top"/>
 _________________
 
 ## Basics
@@ -79,8 +84,8 @@ __Advanced Data Analysis from an Elementary Point of View__
 https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf 
 
 Most texts either focus on the principles and theory of statistics, or the 
-nitty gritty of data analysis code. This book stays focussed on the basics 
-while also demonstrating everything with actual R code and plots. The one 
+nitty gritty of data analysis code. This book is focused on the theory while
+also demonstrating things with actual R code and plots. The one 
 downside is that it uses base R instead of tidyverse stuff. However, once you
 are familiar with tidyverse stuff it is not hard to go between the two. The 
 largest difference is in the base `plot` versus the tidy `ggplot`.
@@ -189,3 +194,5 @@ __R Markdown: The Definitive Guide__
 https://bookdown.org/yihui/rmarkdown/
   
 _________________
+
+Source: https://github.com/rgzn/r_guides
