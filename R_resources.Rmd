@@ -61,6 +61,14 @@ If you want to get started plotting quickly, you can find what you need here:
 
 __R Graphics Cookbook__ https://r-graphics.org/
 
+
+Now that you're writing code, you are aren't going to want to stop and read 
+books every time you need to look up how to do something. I don't even know how 
+to read anymore. One of the best things
+about modern R tools are the cheat sheets. Here is a centralized collection:
+
+__RStudio Cheatsheets__ https://www.rstudio.com/resources/cheatsheets/
+
 _________________
 
 ## Statistics
@@ -84,7 +92,7 @@ __Advanced Data Analysis from an Elementary Point of View__
 https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf 
 
 Most texts either focus on the principles and theory of statistics, or the 
-nitty gritty of data analysis code. This book is focused on the theory while
+nitty gritty of data analysis code. This book is about theory while
 also demonstrating things with actual R code and plots. The one 
 downside is that it uses base R instead of tidyverse stuff. However, once you
 are familiar with tidyverse stuff it is not hard to go between the two. The 
