@@ -198,7 +198,7 @@ another. For example, I've often done something using the QGIS graphical
 interface, and then once I've figured out what I wanted, copied the steps over
 into R or Python using the same underlying GDAL library. 
 
-Unfortunately, ESRI does it's own thing and often doesn't play well with OGC 
+Unfortunately, ESRI does its own thing and often doesn't play well with OGC 
 tools. 
 
 
