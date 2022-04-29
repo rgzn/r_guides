@@ -3,7 +3,8 @@ title: "Learning R for Wildlife"
 author: "Jon Weissman <jweissma@gmail.com>"
 date: "4/28/2022"
 output: 
-  html_notebook:
+  html_document:
+    keep_md: true
     toc: true
     theme: united
 ---
